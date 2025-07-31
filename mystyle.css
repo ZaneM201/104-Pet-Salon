@@ -1,0 +1,27 @@
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: arial;
+    text-align: center;
+    line-height: 2;
+}
+header{ 
+   background-color: cadetblue;
+   height: 200px;
+   padding-left: 10px;
+   text-align: left;
+}
+/* body */
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.registration{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
