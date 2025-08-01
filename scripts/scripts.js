@@ -28,7 +28,7 @@ document.getElementById("petNames").innerHTML = petNames;
 /* Registered */
 document.getElementById("petSum").innerHTML = pets.length;
 /* Average Age */
-const petAge = pet.map(pet => pet.age);
+const petAge = pets.map(pets => pets.age);
 const sum = petAge.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 const averageAge = sum / petAge.length;
 console.log("The average age is: ", averageAge);
