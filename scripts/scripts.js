@@ -1,4 +1,14 @@
 console.log("Pet Salon");
+let salon={
+    name: "🐾 The Paw Spa 🐾",
+    address: "123 Pet Street",
+    email: "thepawspa@email.com",
+    phone: "(123)456-7890",
+};
+document.getElementById("salonName").innerHTML = salon.name;
+document.getElementById("address").innerHTML = salon.address;
+document.getElementById("email").innerHTML = salon.email;
+document.getElementById("phone").innerHTML = salon.phone;
 let pet1={
     name: "Milo", 
     age: 4,
@@ -21,7 +31,6 @@ let pet3={
     breed: "Border Colie mix",
 };
 let pets = [pet1, pet2, pet3];
-
 /* Names */
 let petNamesHTML = "";
 for(i=0; i<pets.length; i++){
