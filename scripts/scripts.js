@@ -18,13 +18,17 @@ let pet3={
     age: 16,
     gender: "Male",
     service: "Nail Trim",
-    breed: "Border Colie mix"
+    breed: "Border Colie mix",
 };
 let pets = [pet1, pet2, pet3];
+
 /* Names */
-const maxPets = pets.length;
-const petNames = pets.map(pets => pets.name);
-document.getElementById("petNames").innerHTML = petNames;
+let petNamesHTML = "";
+for(i=0; i<pets.length; i++){
+    let pet = pets[i];
+    petNamesHTML += pets[i].name + "<br>";
+}
+document.getElementById("petNames").innerHTML = petNamesHTML;
 /* Registered */
 document.getElementById("petSum").innerHTML = pets.length;
 /* Average Age */
