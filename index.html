@@ -25,14 +25,19 @@
         <label for="gender">Gender:</label>
         <input type="text" id="petGender">
         <label for="breed">Breed:</label>
-        <input type="text">
+        <input type="text" id="petBreed">
     </div>
     <div>
         <label for="service">Service:</label>
-        <select name="service" id="service">
+        <select name="service" id="petService">
             <option value="The Works">The Works</option>
             <option value="Bath & Flee">Bath & Flee</option>
             <option value="Nail Trim">Nail Trim</option>
+        </select>
+        <label for="type">Type:</label>
+        <select name="type" id="petType">
+            <option value="Dog">🐶 Dog</option>
+            <option value="Cat">🐱 Cat</option>
         </select>
     </div>
     <button onclick="register()">Register:</button>

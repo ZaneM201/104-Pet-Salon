@@ -16,6 +16,7 @@ let pet1={
     gender: "Male",
     service: "The works",
     breed: "Australian Shepherd",
+    type: "Dog",
 };
 let pet2={
     name: "Maple", 
@@ -23,6 +24,7 @@ let pet2={
     gender: "Female",
     service: "Nail Trim",
     breed: "Greayhound mix",
+    type: "Dog",
 };
 let pet3={
     name: "Tye", 
@@ -30,6 +32,7 @@ let pet3={
     gender: "Male",
     service: "Nail Trim",
     breed: "Border Colie mix",
+    type: "Dog"
 };
 let pets = [pet1, pet2, pet3,];
 /* Names */
