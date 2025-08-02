@@ -17,13 +17,17 @@
     </header>
     <div class="register">
         <label for="name">Name:</label>
-        <input type="text">
+        <input type="text" id="petName">
         <label for="age">Age:</label>
-        <input type="number">
+        <input type="number" id="pAge">
     </div>
     <div>
+        <label for="gender">Gender:</label>
+        <input type="text" id="petGender">
         <label for="breed">Breed:</label>
         <input type="text">
+    </div>
+    <div>
         <label for="service">Service:</label>
         <select name="service" id="service">
             <option value="The Works">The Works</option>
@@ -31,6 +35,7 @@
             <option value="Nail Trim">Nail Trim</option>
         </select>
     </div>
+    <button onclick="register()">Register:</button>
     <div class="container">
         <div class="registration">
             <h2>Registered:</h2>
@@ -38,12 +43,11 @@
         </div>
         <div class="names">
             <h2>Names:</h2>
-            <p class="pet-names" id="petNames"></p>
-            <p class="pet-names" id="petNames"></p>
+            <p class="pet-names" id="registeredNames"></p>
         </div>
     </div>
-
-    <script src="./scripts/scripts.js"></script>
     <script src="./scripts/register.js"></script>
+    <script src="./scripts/scripts.js"></script>
+    
 </body>
 </html>

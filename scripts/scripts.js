@@ -1,6 +1,7 @@
 console.log("Pet Salon");
+/* Header */
 let salon={
-    name: "🐾 The Paw Spa 🐾",
+    name: "🐶 The Paw Spa 🐱",
     address: "123 Pet Street",
     email: "thepawspa@email.com",
     phone: "(123)456-7890",
@@ -14,7 +15,7 @@ let pet1={
     age: 4,
     gender: "Male",
     service: "The works",
-    breed: "Australian Shepard",
+    breed: "Australian Shepherd",
 };
 let pet2={
     name: "Maple", 
@@ -30,14 +31,14 @@ let pet3={
     service: "Nail Trim",
     breed: "Border Colie mix",
 };
-let pets = [pet1, pet2, pet3];
+let pets = [pet1, pet2, pet3,];
 /* Names */
 let petNamesHTML = "";
 for(i=0; i<pets.length; i++){
     let pet = pets[i];
     petNamesHTML += pets[i].name + "<br>";
 }
-document.getElementById("petNames").innerHTML = petNamesHTML;
+document.getElementById("registeredNames").innerHTML = petNamesHTML;
 /* Registered */
 document.getElementById("petSum").innerHTML = pets.length;
 /* Average Age */
