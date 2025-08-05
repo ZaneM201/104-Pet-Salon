@@ -10,9 +10,17 @@ body{
 }
 header{ 
    background-color: lightgreen;
+   display: flex;
    height: 200px;
-   padding-left: 10px;
+   justify-content: space-between;
+   padding: 10px;
    text-align: left;
+   
+}
+a{
+    color: black;
+    padding-right: 10px;
+    text-decoration: none;
 }
 /* body */
 .container{

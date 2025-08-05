@@ -1,10 +1,10 @@
-function Pet(name, age, gender, breed, service, type,){
+function Pet(name, age, gender, breed, service, type){
     this.name = name;
     this.age = age;
     this.gender = gender;
     this.breed = breed;
     this.service = service;
-    this.type = this.type;
+    this.type = type;
 }
 
 let inputName=document.getElementById("petName");
@@ -27,4 +27,5 @@ function clearForm(){
     document.getElementById("petGender").value="";
     document.getElementById("petBreed").value="";
     document.getElementById("petService").value="";
+    document.getElementById("petType").value="";
 }
