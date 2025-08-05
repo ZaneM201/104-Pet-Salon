@@ -23,11 +23,7 @@ a{
     text-decoration: none;
 }
 /* body */
-.container{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-}
+
 .registration{
     display: flex;
     justify-content: center;
