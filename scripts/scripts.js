@@ -15,24 +15,21 @@ let pet1={
     age: 4,
     gender: "Male",
     service: "The works",
-    breed: "Australian Shepherd",
-    type: "Dog",
+    breed: "Dog",
 };
 let pet2={
     name: "Maple", 
     age: 4,
     gender: "Female",
     service: "Nail Trim",
-    breed: "Greayhound mix",
-    type: "Dog",
+    breed: "dog",
 };
 let pet3={
     name: "Tye", 
     age: 16,
     gender: "Male",
     service: "Nail Trim",
-    breed: "Border Colie mix",
-    type: "Dog"
+    breed: "Dog",
 };
 let pets = [pet1, pet2, pet3,];
 /* Names */
