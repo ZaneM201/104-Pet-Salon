@@ -1,0 +1,9 @@
+.service-container{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    
+}
+.serviceCard{
+    margin-right: 2em;
+}

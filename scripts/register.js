@@ -32,11 +32,6 @@ function registerPet(event){
     petRegistrationForm.reset();
 }
 
-function deletePet(pet){
-    document.getElementById(pet).remove();
-    pet.splice(pet,1);
-}
-
 function displayRow(pet){
     const table = document.getElementById("petTable");
     const tableBody = table.tBodies[0];
@@ -72,4 +67,8 @@ function displayRow(pet){
     newRow.appendChild(action);
 
     tableBody.appendChild(newRow);
+}
+
+function init(){
+    
 }
