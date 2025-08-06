@@ -10,28 +10,7 @@ document.getElementById("salonName").innerHTML = salon.name;
 document.getElementById("address").innerHTML = salon.address;
 document.getElementById("email").innerHTML = salon.email;
 document.getElementById("phone").innerHTML = salon.phone;
-let pet1={
-    name: "Milo", 
-    age: 4,
-    gender: "Male",
-    service: "The works",
-    breed: "Dog",
-};
-let pet2={
-    name: "Maple", 
-    age: 4,
-    gender: "Female",
-    service: "Nail Trim",
-    breed: "dog",
-};
-let pet3={
-    name: "Tye", 
-    age: 16,
-    gender: "Male",
-    service: "Nail Trim",
-    breed: "Dog",
-};
-let pets = [pet1, pet2, pet3,];
+
 /* Names */
 let petNamesHTML = "";
 for(i=0; i<pets.length; i++){
