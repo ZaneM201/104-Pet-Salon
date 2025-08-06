@@ -30,7 +30,6 @@ function registerPet(event){
     pet.push(newPet);
     displayRow(newPet);
     petRegistrationForm.reset();
-    console.log(pet);
 }
 
 function deletePet(pet){
@@ -49,6 +48,7 @@ function displayRow(pet){
     const gender = document.createElement("td");
     const breed = document.createElement("td");
     const service = document.createElement("td");
+    const action = document.createElement("td");
 
     name.textContent = pet.name;
     age.textContent = pet.age;
@@ -56,11 +56,20 @@ function displayRow(pet){
     breed.textContent = pet.breed;
     service.textContent = pet.service;
 
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+    deleteBtn.addEventListener('click', function() {
+        newRow.remove();
+    });
+    action.appendChild(deleteBtn);
+    deleteBtn.classList.add("btn", "btn-danger", "btn-sm");
+
     newRow.appendChild(name);
     newRow.appendChild(age);
     newRow.appendChild(gender);
     newRow.appendChild(breed);
     newRow.appendChild(service);
+    newRow.appendChild(action);
 
     tableBody.appendChild(newRow);
 }
