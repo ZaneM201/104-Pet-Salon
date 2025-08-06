@@ -1,6 +1,6 @@
 const petRegistrationForm = document.getElementById("petRegistrationForm");
 
-let pets=[];
+let pet=[];
 
 function Pet(name, age, gender, breed, service){
     this.name = name,
@@ -13,7 +13,9 @@ function Pet(name, age, gender, breed, service){
 const pet1=new Pet("Milo", 4, "Male", "Dog", "The Works");
 const pet2=new Pet("Maple", 4, "Female", "Dog", "Bath & Flee");
 const pet3=new Pet("Tye", 16, "Male", "Dog", "Nail Trim");
-//const pet4=new Pet("Atlas", 2, "Male", "Cat", "The Works");
+pet.push(pet1);
+pet.push(pet2);
+pet.push(pet3);
 
 function registerPet(event){
     event.preventDefault();
@@ -25,9 +27,13 @@ function registerPet(event){
     const service = petRegistrationForm.elements["petService"].value;
     
     const newPet = new Pet(name, age, gender, breed, service);
+    pet.push(newPet);
     displayRow(newPet);
     petRegistrationForm.reset();
-
+    console.log(pet);
+}
+function deletePet(pet){
+    document.getElementById(pet)
 }
 
 function displayRow(pet){
@@ -40,13 +46,13 @@ function displayRow(pet){
     const age = document.createElement("td");
     const gender = document.createElement("td");
     const breed = document.createElement("td");
-    const service= document.createElement("td");
+    const service = document.createElement("td");
 
     name.textContent = pet.name;
     age.textContent = pet.age;
     gender.textContent = pet.gender;
     breed.textContent = pet.breed;
-    service.textContent = pet.breed;
+    service.textContent = pet.service;
 
     newRow.appendChild(name);
     newRow.appendChild(age);

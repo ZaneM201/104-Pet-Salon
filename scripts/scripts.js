@@ -1,12 +1,10 @@
 console.log("Pet Salon");
 /* Header */
 let salon={
-    name: "🐶 The Paw Spa 🐱",
     address: "123 Pet Street",
     email: "thepawspa@email.com",
     phone: "(123) 456-7890",
-};
-document.getElementById("salonName").innerHTML = salon.name;
+}
 document.getElementById("address").innerHTML = salon.address;
 document.getElementById("email").innerHTML = salon.email;
 document.getElementById("phone").innerHTML = salon.phone;
