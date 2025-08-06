@@ -2,6 +2,12 @@ const petRegistrationForm = document.getElementById("petRegistrationForm");
 
 let pet=[];
 
+function displayAllPets(){
+    pet.forEach(petObj =>{
+        displayRow(petObj);
+    });
+}
+
 function Pet(name, age, gender, breed, service){
     this.name = name,
     this.age = age,
@@ -16,6 +22,9 @@ const pet3=new Pet("Tye", 16, "Male", "Dog", "Nail Trim");
 pet.push(pet1);
 pet.push(pet2);
 pet.push(pet3);
+
+displayAllPets();
+document.getElementById("petsRegistered").innerHTML = pet.length;
 
 function registerPet(event){
     event.preventDefault();
@@ -67,8 +76,4 @@ function displayRow(pet){
     newRow.appendChild(action);
 
     tableBody.appendChild(newRow);
-}
-
-function init(){
-    
 }

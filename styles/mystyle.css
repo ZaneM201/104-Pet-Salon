@@ -16,3 +16,21 @@ header{
     padding-top: 5px;
     -webkit-text-stroke: 1px black;
 }
+/* register */
+.petCounter{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+/* service */
+.service-container{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.serviceCard{
+    margin-right: 2em;
+}
+.price{
+    color: green;
+}
