@@ -6,9 +6,12 @@
 /* header */
 header{
     background-image: url(/img/Pet\ Salon\ header.jpg);
+    background-size: cover;
     height: 350px;
 }
 .p-header{
-    color: whitesmoke;
-    padding-top: 200px;
+    color: black;
+    font-family: Franklin Gothic Medium;
+    font-size: 2rem;
+    padding-top: 5px;
 }
