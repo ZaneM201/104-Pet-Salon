@@ -32,8 +32,10 @@ function registerPet(event){
     petRegistrationForm.reset();
     console.log(pet);
 }
+
 function deletePet(pet){
-    document.getElementById(pet)
+    document.getElementById(pet).remove();
+    pet.splice(pet,1);
 }
 
 function displayRow(pet){
