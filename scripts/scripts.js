@@ -11,15 +11,15 @@ document.getElementById("phone").innerHTML = salon.phone;
 
 /* Names */
 let petNamesHTML = "";
-for(i=0; i<pets.length; i++){
-    let pet = pets[i];
-    petNamesHTML += pets[i].name + "<br>";
+for(i=0; i<pet.length; i++){
+    let pet = pet[i];
+    petNamesHTML += pet[i].name + "<br>";
 }
 document.getElementById("registeredNames").innerHTML = petNamesHTML;
 /* Registered */
-document.getElementById("petSum").innerHTML = pets.length;
+document.getElementById("petSum").innerHTML = pet.length;
 /* Average Age */
-const petAge = pets.map(pets => pets.age);
+const petAge = pet.map(pet => pet.age);
 const sum = petAge.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 const averageAge = sum / petAge.length;
 console.log("The average age is: ", averageAge);
