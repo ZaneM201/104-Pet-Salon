@@ -42,7 +42,7 @@ function registerPet(event){
     document.getElementById("petsRegistered").innerHTML = pet.length;
 }
 
-function displayRow(pet){
+function displayRow(petObj){
     const table = document.getElementById("petTable");
     const tableBody = table.tBodies[0];
 
@@ -55,16 +55,21 @@ function displayRow(pet){
     const service = document.createElement("td");
     const action = document.createElement("td");
 
-    name.textContent = pet.name;
-    age.textContent = pet.age;
-    gender.textContent = pet.gender;
-    breed.textContent = pet.breed;
-    service.textContent = pet.service;
+    name.textContent = petObj.name;
+    age.textContent = petObj.age;
+    gender.textContent = petObj.gender;
+    breed.textContent = petObj.breed;
+    service.textContent = petObj.service;
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
     deleteBtn.addEventListener('click', function() {
+        const petIndex = pet.findIndex(p => p === petObj);
+        if (petIndex > -1) {
+            pet.splice(petIndex, 1);
+        }
         newRow.remove();
+        document.getElementById("petsRegistered").innerHTML = pet.length;
     });
     action.appendChild(deleteBtn);
     deleteBtn.classList.add("btn", "btn-danger", "btn-sm");
