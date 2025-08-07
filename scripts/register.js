@@ -26,6 +26,7 @@ pet.push(pet3);
 displayAllPets();
 document.getElementById("petsRegistered").innerHTML = pet.length;
 
+
 function registerPet(event){
     event.preventDefault();
     console.log("Register Pet Function");
@@ -39,6 +40,7 @@ function registerPet(event){
     pet.push(newPet);
     displayRow(newPet);
     petRegistrationForm.reset();
+    document.getElementById("petsRegistered").innerHTML = pet.length;
 }
 
 function displayRow(pet){
