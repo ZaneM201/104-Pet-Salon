@@ -26,7 +26,6 @@ pet.push(pet3);
 displayAllPets();
 document.getElementById("petsRegistered").innerHTML = pet.length;
 
-
 function registerPet(event){
     event.preventDefault();
     console.log("Register Pet Function");
