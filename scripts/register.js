@@ -25,6 +25,7 @@ pet.push(pet3);
 
 displayAllPets();
 document.getElementById("petsRegistered").innerHTML = pet.length;
+averageAge();
 
 function registerPet(event){
     event.preventDefault();
@@ -70,6 +71,7 @@ function displayRow(petObj){
         }
         newRow.remove();
         document.getElementById("petsRegistered").innerHTML = pet.length;
+        averageAge();
     });
     action.appendChild(deleteBtn);
     deleteBtn.classList.add("btn", "btn-danger", "btn-sm");
@@ -84,7 +86,9 @@ function displayRow(petObj){
     tableBody.appendChild(newRow);
 }
 /* average Age */
-const petAge = pet.map(pet => pet.age);
-const sum = petAge.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-const averageAge = sum / petAge.length;
-console.log(`The average age is: ${averageAge}`);
+function averageAge(){
+    const petAge = pet.map(pet => pet.age);
+    const sum = petAge.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    const averageAge = sum / petAge.length;
+    console.log(`The average age is: ${averageAge}`);
+}
