@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +8,39 @@
     <title>Services: The Paw Spa</title>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
+
+            <button id="changModeButton">☀️</button>
+
             <a class="navbar-brand" href="#">🐶 The Paw Spa 🐱</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link active" href="services.html">Services</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="register.html">Registration</a>
                     </li>
+
                 </ul>
             </div>
+
         </div>
     </nav>
+
     <header>
         <div class="p-header m-3">
             <p id="address"></p>
@@ -36,25 +48,34 @@
             <p id="phone"></p>
         </div>
     </header>
+
     <h1>Services</h1>
+
     <form class="m-5 p-4 container border rounded bg-light shadow-sm" id="serviceRegistrationForm">
+
         <div>
-            <label class="form-label mb-3">Service</label>
+            <label for="requiredService" class="form-label mb-3">Service</label>
             <input class="form-control mb-3" id="requiredService" type="text" placeholder="The Works">
         </div>
+
         <div>
-            <label class="form-label mb-3">Description</label>
+            <label for="requiredDes" class="form-label mb-3">Description</label>
             <input class="form-control mb-3" id="requiredDes" type="text">
         </div>
+
         <div>
-            <label class="form-label mb-3">Price</label>
-            <input class="form-control mb-3" id="requiredPrice" type="number" placeholder="80.00">
+            <label for="requiredPrice" class="form-label mb-3">Price</label>
+            <input class="form-control mb-3" id="requiredPrice" type="number" placeholder="80.00" required step="any">
         </div>
-        <button class="btn btn-primary" type="submit" id="serviceSubmit">Register</button>
+
+        <button class="btn btn-primary" type="submit" id="serviceSubmit">Register Service</button>
+        
         <button class="btn btn-dark" type="reset">Cancel</button>
 
     </form>
-    <section class="service-container m-5">
+
+    <section class="service-card-container m-5">
+
         <div class="serviceCard">
             <div class="card" style="width: 18rem;">
                 <img src="./img/The Works.jpg" class="card-img-top" alt="The Works">
@@ -66,6 +87,7 @@
                 </div>
             </div>
         </div>
+
         <div class="serviceCard">
             <div class="card" style="width: 18rem;">
                 <img src="./img/Bath and Flee.jpg" class="card-img-top" alt="bath and flee">
@@ -77,6 +99,7 @@
                 </div>
             </div>
         </div>
+
         <div class="serviceCard">
             <div class="card" style="width: 18rem;">
                 <img src="./img/Nail Trim.jpg" class="card-img-top" alt="nail trim">
@@ -88,27 +111,40 @@
                 </div>
             </div>
         </div>
+
     </section>
+
     <footer class="contact-footer"> 
+
         <div class="footer-div-parent">
+
             <div class="footer-div-c1">
-                <p>Powered by <b class="ul">Zillow</b></p>  
+                <p>🐶 The Paw Spa 🐱</p>  
             </div>
+
             <div class="footer-div-c2">
                 <p>Copyright &copy; 2025</p>
                 <p class="footer-p1">| Privacy Policy</p>
             </div>
+
             <div class="footer-div-c3">
                 <div><i class="fa-brands fa-facebook"></i></div>
                 <div><i class="fa-brands fa-linkedin-in"></i></div>
                 <div><i class="fa-brands fa-youtube"></i></div>
             </div>
+
         </div>
+
     </footer>
         
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
     <script src="./scripts/scripts.js"></script>
+
     <script src="./scripts/service.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
     <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +8,37 @@
     <title>Register: The Paw Spa</title>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
+
             <a class="navbar-brand" href="#">🐶 The Paw Spa 🐱</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Services</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link active" href="register.html">Registration</a>
                     </li>
+
                 </ul>
             </div>
+
         </div>
     </nav>
+
     <header>
         <div class="p-header m-3">
             <p id="address"></p>
@@ -36,20 +46,27 @@
             <p id="phone"></p>
         </div>
     </header>
+
     <section class="container m-5">
+
         <h1>Registration</h1>
+
         <form class="m-5 p-4 container border rounded bg-light shadow-sm " id="petRegistrationForm">
             <div class="row mb-3">
+
                 <div class="col">
                     <label class="form-label fw-bold">Name:</label>
                     <input class="form-control" type="text" name="petName" id="petName">
                 </div>
+
                 <div class="col">
                     <label class="form-label fw-bold">Age:</label>
                     <input class="form-control" type="number" name="petAge" id="petAge">
                 </div>
             </div>
+
             <div class="row mb-3">
+
                 <div class="col">
                     <label class="form-label fw-bold">Gender:</label>
                     <select class="form-select" name="petGender" id="petGender">
@@ -58,6 +75,7 @@
                         <option value="Female">Female</option>
                     </select>
                 </div>
+
                 <div class="col">
                     <label class="form-label fw-bold">Breed:</label>
                     <select class="form-select" name="petBreed" id="petBreed">
@@ -66,8 +84,11 @@
                         <option value="Cat">🐱 Cat</option>
                     </select> 
                 </div>
+
             </div>
+
             <div class="row mb-3">
+
                 <div class="col-sm-6">
                     <label class="form-label fw-bold">Service:</label>
                     <select class="form-select" name="petService" id="petService">
@@ -77,18 +98,25 @@
                         <option value="Nail Trim">Nail Trim</option>
                     </select>
                 </div>
+
             </div>
+
             <div class="d-flex justify-content-end">
                 <button class="btn btn-dark m-2" type="submit" onclick="registerPet(event)">Register:</button>
                 <button class="btn btn-secondary m-2" type="reset">Reset</button>
             </div>
+
         </form>
+
     </section>
+
     <section class="container m-5">
+
         <div class="petCounter">
             <h2>Registered Pets:</h2>
             <h2 id="petsRegistered"></h2>
         </div>
+
         <table id="petTable" class="table table-striped">
             <thead>
                 <th>Name</th>
@@ -102,27 +130,40 @@
                 
             </tbody>
         </table>
+
     </section>
-    <footer class="contact-footer"> 
+
+    <footer class="contact-footer">
+
         <div class="footer-div-parent">
+
             <div class="footer-div-c1">
-                <p>Powered by <b class="ul">Zillow</b></p>  
+                <p>🐶 The Paw Spa 🐱</p>  
             </div>
+
             <div class="footer-div-c2">
                 <p>Copyright &copy; 2025</p>
                 <p class="footer-p1">| Privacy Policy</p>
             </div>
+
             <div class="footer-div-c3">
                 <div><i class="fa-brands fa-facebook"></i></div>
                 <div><i class="fa-brands fa-linkedin-in"></i></div>
                 <div><i class="fa-brands fa-youtube"></i></div>
             </div>
+
         </div>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <script src="./scripts/scripts.js"></script>
+
     <script src="./scripts/register.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
     <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -3,6 +3,15 @@
     margin: 0;
     padding: 0;
 }
+
+/* dark Mode */
+.dark-mode{
+    --background-color: #1A2744;
+    --surface-color: #23345A;
+    --text-colr: #F4F4FB;
+    --button-color: #45ADFF;
+}
+
 /* header */
 header{
     background-image: url(/img/Pet\ Salon\ header.jpg);
@@ -23,7 +32,7 @@ header{
     gap: 10px;
 }
 /* service */
-.service-container{
+.service-card-container{
     align-content: center;
     display: flex;
     flex-direction: row;
