@@ -1,4 +1,15 @@
-console.log("Pet Salon");
+/* mode selection */
+const html = document.getElementById("modeToggle");
+const checkbox = document.getElementById("checkbox")
+
+checkbox.addEventListener("change", () => {
+    if(checkbox.checked){
+        console.log("Dark Mode Activate");
+        modeToggle.setAttribute("data-bs-theme", "dark");
+    }else{
+        modeToggle.setAttribute("data-bs-theme", "light")
+    }
+});
 /* header */
 let salon={
     address: "123 Pet Street",
