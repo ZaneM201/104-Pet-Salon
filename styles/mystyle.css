@@ -35,7 +35,7 @@
     left: 2px;
     right: 2px;
     border-radius: 50%;
-    transistion: transform 0.2s linear;
+    transition: transform 0.2s linear;
 }
 .checkbox:checked + .checkbox-label .ball{
     transform: translateX(24px);

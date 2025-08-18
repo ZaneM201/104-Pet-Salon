@@ -1,13 +1,15 @@
 /* mode selection */
 const html = document.getElementById("modeToggle");
 const checkbox = document.getElementById("checkbox")
+const themeValue = $("#modeToggle").value;
 
 checkbox.addEventListener("change", () => {
     if(checkbox.checked){
-        console.log("Dark Mode Activate");
         modeToggle.setAttribute("data-bs-theme", "dark");
+        localStorage.setItem("theme", themeValue);
     }else{
         modeToggle.setAttribute("data-bs-theme", "light")
+        localStorage.setItem("theme", themeValue);
     }
 });
 /* header */
