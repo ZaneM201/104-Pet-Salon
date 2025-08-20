@@ -169,3 +169,129 @@ header::before{
     background-color: #adb5bd;
     color: #212529;
 }
+
+/* media queries */
+@media (max-width: 768px) {
+    /* Navigation */
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .mode-toggle {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* header */
+    header {
+        height: 250px;
+    }
+    
+    .p-header {
+        font-size: 1.3rem;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    /* mission container */
+    .mission-container {
+        margin: 1rem 0.5rem !important;
+        padding: 1.5rem !important;
+    }
+    
+    .mission-container h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .mission-container p {
+        font-size: 1.1rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* page titles */
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    
+    /* services */
+    .service-card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 2rem 1rem !important;
+    }
+    
+    .serviceCard {
+        margin-right: 0;
+    }
+    
+    .serviceCard .card {
+        width: 100% !important;
+        max-width: 350px;
+    }
+    
+    /* forms */
+    form.container {
+        margin: 1rem 0.5rem !important;
+        padding: 1.5rem !important;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* registration page */
+    .petCounter {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .petCounter h2 {
+        font-size: 1.4rem;
+    }
+    
+    /* table responsive */
+    #petTable {
+        font-size: 0.85rem;
+    }
+    
+    #petTable th,
+    #petTable td {
+        padding: 0.5rem 0.3rem;
+    }
+    
+    #petTable .btn {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+        width: auto;
+    }
+    
+    /* footer */
+    .footer-div-parent {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .footer-div-c2 {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .contact-footer {
+        margin-top: 80px;
+    }
+}
