@@ -1,13 +1,3 @@
-/* dark mode */
-$("#changeModeButton").click(function(){
-    $("body").toggleClass("dark-mode");
-    if($("body").hasClass("dark-mode")){
-        $("#changeModeButton").text("🌙");
-    }else{
-        $("#changeModeButton").text("☀️");
-    }
-});
-
 let services=[];
 const requiredService=document.getElementById("requiredService");
 const requiredDes=document.getElementById("requiredDes");
@@ -72,41 +62,3 @@ function serviceRegistration(){
 $("#serviceSubmit").click(function(){
     serviceRegistration();
 });
-
-/*$(document).ready(function (){
-
-    // The user clicked Register Service button -
-    // We will catch the click and manipulate the information
-
-    // Select the form by id using jQuery 
-    $("#serviceRegistrationForm").on("submit", function(e){
-        e.preventDefault();
-
-        // Get the values using jQuery
-        const serviceName = $("#requiredService").val().trim();
-        const serviceDescription = $("#requiredDes").val().trim();
-        const servicePrice = $("#requiredPrice").val().trim();
-
-        // Confirm we are retriving the values
-        console.log(`${serviceName}, ${serviceDescription}, ${servicePrice}`);
-
-        // Validate the values
-        if(!serviceName || !serviceDescription || servicePrice <=0){
-            // alert the user this is not valid data
-            $("#requiredService").css("border", "solid 1px red");
-            $("#requiredDes").css("border", "solid 1px red");
-            $("#requiredPrice").css("border", "solid 1px red");
-            
-        }else{
-            // Print/Save the information
-            alert("Service has been Registered");
-        }
-
-        // Notify the user
-
-        // Clear the form
-        $("#serviceRegistrationForm")[0].reset();
-    });
-
-});
-*/
