@@ -4,96 +4,125 @@
     padding: 0;
 }
 
-/* dark Mode */
-.checkbox{
-    opacity: 0;
-    position: absolute;
-    display: none !important;
-}
-.checkbox-label{
-    align-items: center;
-    background-color: #111;
-    border-radius: 50px;
+/* mode button */
+.mode-toggle{
+    background: none;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
-    height: 26px;
-    justify-content: space-between;
-    position: relative;
-    padding: 5px;
-    width: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
-.fa-moon{
-    color: #f1c40f;
-}
-.fa-sun{
+
+/* light mode */
+[data-bs-theme="light"].mode-toggle{
+    border-color: #f39c12;
     color: #f39c12;
 }
-.checkbox-label .ball{
-    background-color: #fff;
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    left: 2px;
-    right: 2px;
-    border-radius: 50%;
-    transition: transform 0.2s linear;
+[data-bs-theme="light"].mode-toggle:hover{
+    background-color: #f39c12;
+    color: white;
 }
-.checkbox:checked + .checkbox-label .ball{
-    transform: translateX(24px);
+
+/* dark mode */
+[data-bs-theme="dark"].mode-toggle{
+    border-color: #f1c40f;
+    color: #f1c40f;
 }
-#checkbox{
-    display: none;
+[data-bs-theme="dark"].mode-toggle:hover{
+    background-color: #f1c40f;
+    color: #212529;
 }
 
 /* header */
 header{
     background-image: url(/img/Pet\ Salon\ header.jpg);
     background-size: cover;
+    background-position: center;
     height: 350px;
+    position: relative;
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
 }
 .p-header{
+    position: relative;
+    z-index: 1;
     color: white;
     font-family: Franklin Gothic Medium;
     font-size: 2rem;
     padding-top: 5px;
-    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
+/* nav bar */
+.navbar-brand{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 /* register */
 .petCounter{
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
+
 /* service */
 .service-card-container{
     align-content: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .serviceCard{
     margin-right: 2em;
 }
 .price{
-    color: green;
+    color: #28a745;
+    font-weight: bold;
 }
+[data-bs-theme="dark"].price{
+    color: #20c997;
+}
+
 /* footer */
 .contact-footer{
-    background-color: lightgrey;
-    height: 100px;
     margin-top: 260px;
-}    
+    padding: 20px 0;
+    transition: all 0.3s ease;
+}
+[data-bs-theme="light"].contact-footer{
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+[data-bs-theme="dark"].contact-footer{
+    background-color: #343a40;
+    border-top: 1px solid #495057;
+}
 .footer-div-parent{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 38px;
+    align-items: center;
+    padding: 20px;
 }
 .footer-div-c1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-.ul{
-    text-decoration: underline;
+    font-weight: bold;
 }
 .footer-div-c2{
     display: flex;
@@ -104,6 +133,7 @@ header{
 .footer-p1{
     font-weight: bold;
     text-decoration: underline;
+    cursor: pointer;
 }
 .footer-div-c3{
     display: flex;
@@ -111,8 +141,31 @@ header{
     justify-content: space-evenly;
     gap: 18px;
 }
-.fa-brands{
-    border: 1px solid black;
+.social-icon{
+    border: 2px solid;
     padding: 8px;
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+[data-bs-theme="light"].social-icon{
+    border-color: #6c757d;
+    color: #6c757d;
+}
+[data-bs-theme="light"].social-icon:hover{
+    background-color: #6c757d;
+    color: white;
+}
+[data-bs-theme="dark"].social-icon{
+    border-color: #adb5bd;
+    color: #adb5bd;
+}
+[data-bs-theme="dark"].social-icon:hover{
+    background-color: #adb5bd;
+    color: #212529;
 }
