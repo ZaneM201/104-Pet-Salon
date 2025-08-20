@@ -10,17 +10,12 @@
     <title>Services: The Paw Spa</title>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-
             <div>
-                <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
-                <label for="checkbox" class="checkbox-label">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                    <span class="ball "></span>
-                </label>
+                <button class="mode-toggle" id="changeModeButton" aria-label="Toggle dark mode">
+                    <i class="fas fa-sun" id="modeIcon"></i>
+                </button>
             </div>
 
             <a class="navbar-brand" href="#">🐶 The Paw Spa 🐱</a>
@@ -30,14 +25,14 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="services.html">Services</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
 
                     <li class="nav-item">
@@ -148,11 +143,11 @@
         
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
     <script src="./scripts/scripts.js"></script>
 
     <script src="./scripts/service.js"></script>
-
-    
 
     <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
 </body>
